@@ -1,0 +1,125 @@
+html{
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.4;
+	color: black;
+	background-color: white;
+	/* keep mobiles from adjusting type size */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+
+/*
+* remove extra space for rich media at bottom of their container
+* h5bp.com/i/440
+*/
+
+audio,canvas,img,video{
+	vertical-align: middle;
+}
+
+
+
+.clearfix:before,
+.clearfix:after{
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+*
+* Visible to all browser
+*
+*/
+
+.visible-all{
+	display: block;
+	visibility: visible;
+}
+
+/*
+*
+* visible only to screen readers, adapted from HTML5 Boilerplate
+* @link h5bp.com/v
+*/
+.visible-screenreader{
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+* extends visible-screen-reader so that tabbed focus still works
+* adapted from HTML5 Boilerplate
+* class="visual-screenreader focusable"
+* @link h5bp.com/p
+*/
+
+.visible-screenreader.focusable:active,
+.visible-screenreader.focusable:focus{
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+
+}
+
+/*
+*
+* invisible for all browsers (including screen readers), removed
+* from document flow. Adapted from HTML5 Boilerplate
+* @link http://www.html5boilerplate.com
+* NOTE: we also apply ARIA-HIDDEN to these elements, and
+* these must be changed using javascript
+*/
+
+
+.visible-none{
+	display: none !important;
+	visibility: hidden; 
+}
+
+/*
+* Alawys hide an elemntet when it has the "hidden" HTML attribute.
+* from Pure CSS
+*/
+
+[hidden]{
+	display: none;
+	visibility: hidden;
+}
+
+/*
+*
+* -----------------------------------------------------------------
+* IMAGES
+* -----------------------------------------------------------------
+*
+*/
+
+
+/*
+*
+* -----------------------------------------------------------------
+* STYLES FOR WRAPPER
+* -----------------------------------------------------------------
+*
+*/
+
+
+
+
+
+
+
