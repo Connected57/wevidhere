@@ -292,15 +292,16 @@ The item properties allow us to define our ARIA support to search engines -->
 	-->
 	<header id="site-banner" role="banner">
 		<!--nested heading of topic for the whole page-->
-		<h1 itemprop="name">Vegan Meat Market Games</h1>
-		<img itemprop="primaryImageOfPage" src="img/veganmeatmarket_logo.png" width="800" height="240" alt="Vegan Meat Market logo, with text plus small piggie in the leaves">
-
+        <div class="logo-wrapper">
+            <img class="logo" itemprop="primaryImageOfPage" src="img/veganmeatmarket_logo.jpg" width="1000" height="1000" alt="Vegan Meat Market logo, with text plus small piggie in the leaves">
+		    <h1 itemprop="name">Vegan Meat Market Games</h1>
+        </div>
 		<!--Site Navigation
 		Note that the page file names MUST match those lised in sitemap.xml. We also label by
 		ARIA roles
 		Microdata (breadcrumb)
 		-->
-		<nav role="navigation" aria-labelledby="website-navigation">
+		<nav class="top-main-nav" role="navigation" aria-labelledby="website-navigation">
 			<h2 id="website-navigation">Website Navigation Menu</h2>
 			<ul role="menu" itemprop="breadcrumb">
 				<li><a href="index.html" title="Vegan Meat Market Home Page">Home</a></li>
@@ -331,15 +332,16 @@ The item properties allow us to define our ARIA support to search engines -->
 	NOTE: We added "WebGame" as a custom classification of this app (not in schema.org)
 	-->
 	<main id="screens" ng-app="WeVidHere" role="main" itemscope itemtype="http://schema.org/SoftwareApplication">
-	
+    <h2 class="splash">Splash Screen</h2>
+
 	<!-- NOTE DEBUGGING ONLY -->
-	<p>Nothing here {{'yet' + '!'}} </p>
+	<p class="debug">Nothing here {{'yet' + '!'}} </p>
 	<!-- END DEBUGGING ONLY -->
 
 		<!--hide this from users, but leave for text readers and search engines. Include 
 		author and version microdata-->
 		<h2 itemprop="name">WeVidHere</h2>
-		<a itemprop="url" href="http://plyojump.com/projects/veganmeatmarket/"><span itemprop="author">Vegan Meat Market Games</span></a>
+		<a itemprop="url" href="http://http://doubleadesign.net/WeVidHere-v4/"><span itemprop="author">Vegan Meat Market Games</span></a>
 		
 		<meta itemprop="softwareVersion" content="version 3">
 		<meta itemprop="datePublished" content="October 22, 2014">
@@ -365,11 +367,10 @@ The item properties allow us to define our ARIA support to search engines -->
 
 			<header>
 				<img src="img/icon/favicon-192x192.png" itemprop="image" alt="WeVidHere Logo">
-				<h2>Splash Screen</h2>
 			</header>
 
 			<!--options on splash. Both 'Register' and 'Login' go to the same link anchor since we are using a 'Lazy Registration' design pattern-->
-			<nav role="navigation" aria-labelledby="splash-screen-options">
+			<nav class="splash-screen-options" role="navigation" aria-labelledby="splash-screen-options">
 				<h3 id="splash-screen-options">Splash Screen Options</h3>
 					<ul role="menu">
 						<li><a href="#screen-config" title="login to the WeVidHere Game">Join Us</a></li>
@@ -791,11 +792,11 @@ The item properties allow us to define our ARIA support to search engines -->
 		<!--about the designers at Plyojump, who run Vegan Meat Market Games as one of their projects-->
 		<section itemscope itemtype="http://schema.org/Organization">
 			<h3>Contact Info</h3>
-			<p><span itemprop="suborganization">Vegan Meat Market Games</span> is a subsidary of <span itemprop="name">Plyojump</span>.</p>
+			<p><span itemprop="suborganization">Vegan Meat Market Games</span> is a subsidary of <span itemprop="name">Double A Design</span>.</p>
 			<address>
 				<em class="fn">
-					<a itemprop="url" title="Plyojump - Where Robots learn to jump" href="#">Plyojump, Where Robots Jump</a>
-					<a itemprop="email" title="email plyojump" href="#">pindiespace@gmail.com</a>
+					<a itemprop="url" title="Double A Design - Where Design is our Passion href="#">Double A Design</a>
+					<a itemprop="email" title="email double a design" href="#">connected57@gmail.com</a>
 				</em>
 			</address>
 		</section>
@@ -809,7 +810,7 @@ The item properties allow us to define our ARIA support to search engines -->
 		<section>
 			<h3>Last Updated</h3>
 			<p>
-				<time datetime="2014-10-04" class="published updated">Last updated November 4th, 2014</time>
+				<time datetime="2014-10-04" class="published updated">Last updated December 15th, 2014</time>
 			</p>
 		</section>
 
